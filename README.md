@@ -51,7 +51,11 @@ Hybrid wins 39% of questions vs Standard's 36%, while saving 7.7% tokens.
 - 500 evaluation questions across 10 question types
 - Sources: Slack, Gmail, GitHub, Jira, Confluence, HubSpot, Linear, Fireflies, Google Drive
 
-**Dataset source:** [ADD HUGGINGFACE LINK HERE]
+**Dataset source:** 🔗 Direct Links
+Resource	Link
+Hugging Face Dataset	https://huggingface.co/datasets/onyx-dot-app/EnterpriseRAG-Bench
+GitHub Repository	https://github.com/onyx-dot-app/EnterpriseRAG-Bench
+Academic Paper (arXiv)	https://arxiv.org/abs/2605.05253
 
 ## Quick Start
 
@@ -67,7 +71,7 @@ export OPENAI_API_KEY=sk-your-key-here
 python -c "from v24 import build_large_corpus_engine; db,p,e = build_large_corpus_engine(); print(e.compare('What GitHub PRs relate to Jira tickets?'))"
 
 # Run evaluation
-python batch_compare_v2.py --force-hybrid --sample 50
+python batch_compare_v2.py --force-hybrid --sample 50  #50 denotes the number of questions run in the sample.
 
 # Run tests
 python test_v24.py
