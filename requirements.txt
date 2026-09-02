@@ -1,0 +1,24 @@
+# Core dependencies
+numpy>=1.24
+pandas>=2.0
+pyarrow>=12.0          # parquet file reading
+scikit-learn>=1.3      # TF-IDF, KMeans clustering
+
+# NER entity extraction (optional but recommended — falls back to regex)
+spacy>=3.7
+# After install, download the model:
+#   python -m spacy download en_core_web_sm
+
+# Cross-encoder reranking (optional — falls back gracefully)
+sentence-transformers>=2.2
+
+# Routing config file support (optional — uses defaults if missing)
+PyYAML>=6.0
+
+# LLM providers (at least one needed for generation)
+openai>=1.0
+# anthropic>=0.20     # uncomment for Claude support
+# google-generativeai  # uncomment for Gemini support
+
+# File picker (optional — used by batch_compare_v2.py --pick)
+# tkinter is included in most Python installs; no pip needed

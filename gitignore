@@ -1,0 +1,48 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Database files (too large for GitHub)
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+
+# Data files (too large for GitHub)
+*.parquet
+*.csv
+!requirements.txt
+
+# Eval results (regenerated per run)
+comparison_results*
+final_results*
+latency_test*
+
+# Backups
+*.bak
+*_backup*
+*_pre_*
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment
+.env

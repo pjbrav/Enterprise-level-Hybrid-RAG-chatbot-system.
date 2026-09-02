@@ -1,0 +1,71 @@
+# Routing configuration — per-deployment partition keywords.
+#
+# This file overrides the hardcoded PARTITION_KEYWORDS in v24.py.
+# Each deployment creates its own version with the data sources they use.
+# If this file doesn't exist, the defaults in v24.py are used.
+#
+# Example: a company using Zendesk, Notion, and Salesforce would set:
+
+partitions:
+  partition_zendesk:
+    keywords:
+      - zendesk
+      - ticket
+      - case
+      - requester
+      - assignee
+      - help desk
+
+  partition_notion:
+    keywords:
+      - notion
+      - wiki
+      - page
+      - database
+      - documentation
+
+  partition_salesforce:
+    keywords:
+      - salesforce
+      - opportunity
+      - lead
+      - account
+      - contact
+      - pipeline
+      - crm
+
+  partition_slack:
+    keywords:
+      - slack
+      - channel
+      - dm
+      - direct message
+      - slack message
+
+  partition_gmail:
+    keywords:
+      - gmail
+      - email
+      - inbox
+      - thread
+      - mail
+
+  partition_github:
+    keywords:
+      - github
+      - pr
+      - pull request
+      - repo
+      - repository
+      - commit
+      - branch
+      - merge request
+
+  partition_jira:
+    keywords:
+      - jira
+      - ticket
+      - epic
+      - sprint
+      - backlog
+      - kanban
