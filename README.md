@@ -97,7 +97,7 @@ Open VS Code, open a new terminal (``Ctrl+` ``), and paste these commands one by
 
 ```powershell
 # 1. Clone the repository
-git clone https://github.com/YOUR_USERNAME/hybrid-rag.git
+git clone https://github.com/pjbrav/hybrid-rag.git
 cd hybrid-rag
 
 # 2. Create and activate a virtual environment
@@ -133,7 +133,7 @@ git add .
 git commit -m "Initial commit: Hybrid RAG v24 with entity graph, smart router, and 500-question evaluation"
 
 # 2. Create a new repo on GitHub first (github.com/new), then link it
-git remote add origin https://github.com/YOUR_USERNAME/hybrid-rag.git
+git remote add origin https://github.com/pjbrav/hybrid-rag.git
 git branch -M main
 
 # 3. Push to GitHub
